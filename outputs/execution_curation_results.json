@@ -1,0 +1,361 @@
+{
+  "config": {
+    "per_task": 24,
+    "seed": 12
+  },
+  "failure_groups": {
+    "api_error": [
+      "normalize_scores_02",
+      "normalize_scores_08",
+      "normalize_scores_16",
+      "top_k_unique_09",
+      "top_k_unique_12",
+      "parse_ints_09",
+      "parse_ints_13",
+      "parse_ints_15"
+    ],
+    "boundary": [
+      "normalize_scores_10",
+      "normalize_scores_12",
+      "normalize_scores_17",
+      "top_k_unique_02",
+      "top_k_unique_11",
+      "top_k_unique_16",
+      "top_k_unique_19",
+      "top_k_unique_22"
+    ],
+    "hidden_semantic": [
+      "normalize_scores_00",
+      "normalize_scores_01",
+      "normalize_scores_05",
+      "normalize_scores_13",
+      "normalize_scores_14",
+      "normalize_scores_15",
+      "normalize_scores_18",
+      "normalize_scores_19"
+    ],
+    "none": [
+      "normalize_scores_03",
+      "normalize_scores_04",
+      "normalize_scores_09",
+      "normalize_scores_11",
+      "normalize_scores_20",
+      "normalize_scores_21",
+      "top_k_unique_03",
+      "top_k_unique_05"
+    ],
+    "timeout": [
+      "normalize_scores_06",
+      "normalize_scores_07",
+      "normalize_scores_23",
+      "top_k_unique_18",
+      "parse_ints_11",
+      "parse_ints_17"
+    ],
+    "type_error": [
+      "top_k_unique_00",
+      "top_k_unique_14",
+      "parse_ints_02",
+      "parse_ints_14",
+      "parse_ints_20",
+      "parse_ints_23",
+      "clip_values_05",
+      "clip_values_08"
+    ]
+  },
+  "metrics": {
+    "avg_query_ms": 0.047965966666666436,
+    "curated_records": 8,
+    "duplicate_reduction": 0.9166666666666666,
+    "provenance_edges": 584,
+    "provenance_nodes": 370,
+    "raw_records": 96,
+    "risk_cases": 46,
+    "tag_accuracy": 1.0
+  },
+  "sample_queries": [
+    {
+      "artifact_id": "normalize_scores_00",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "failure:api_error",
+        "failure:hidden_semantic",
+        "test:normalize_scores_00:hidden"
+      ],
+      "lineage": [
+        "normalize_scores_00"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ],
+        [
+          "normalize_scores_13",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_01",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "failure:api_error",
+        "failure:hidden_semantic",
+        "test:normalize_scores_00:hidden"
+      ],
+      "lineage": [
+        "normalize_scores_00",
+        "normalize_scores_01"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ],
+        [
+          "normalize_scores_13",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_05",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "artifact:normalize_scores_06",
+        "artifact:normalize_scores_07",
+        "failure:api_error"
+      ],
+      "lineage": [
+        "normalize_scores_05"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_13",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_10",
+      "descendants": [
+        "artifact:normalize_scores_02",
+        "artifact:normalize_scores_10",
+        "artifact:normalize_scores_11",
+        "artifact:normalize_scores_12",
+        "failure:api_error",
+        "failure:boundary"
+      ],
+      "lineage": [
+        "normalize_scores_10"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_12",
+          1.0
+        ],
+        [
+          "normalize_scores_17",
+          1.0
+        ],
+        [
+          "parse_ints_00",
+          0.42857142857142855
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_12",
+      "descendants": [
+        "artifact:normalize_scores_02",
+        "artifact:normalize_scores_10",
+        "artifact:normalize_scores_11",
+        "artifact:normalize_scores_12",
+        "failure:boundary",
+        "failure:none"
+      ],
+      "lineage": [
+        "normalize_scores_10",
+        "normalize_scores_12"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_10",
+          1.0
+        ],
+        [
+          "normalize_scores_17",
+          1.0
+        ],
+        [
+          "parse_ints_00",
+          0.42857142857142855
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_13",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "failure:api_error",
+        "failure:hidden_semantic",
+        "test:normalize_scores_00:hidden"
+      ],
+      "lineage": [
+        "normalize_scores_13"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_14",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "failure:api_error",
+        "failure:hidden_semantic",
+        "test:normalize_scores_00:hidden"
+      ],
+      "lineage": [
+        "normalize_scores_14"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_15",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "artifact:normalize_scores_10",
+        "artifact:normalize_scores_11",
+        "artifact:normalize_scores_12"
+      ],
+      "lineage": [
+        "normalize_scores_15"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_17",
+      "descendants": [
+        "artifact:normalize_scores_02",
+        "artifact:normalize_scores_10",
+        "artifact:normalize_scores_11",
+        "artifact:normalize_scores_12",
+        "failure:boundary",
+        "failure:none"
+      ],
+      "lineage": [
+        "normalize_scores_15",
+        "normalize_scores_17"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_10",
+          1.0
+        ],
+        [
+          "normalize_scores_12",
+          1.0
+        ],
+        [
+          "parse_ints_00",
+          0.42857142857142855
+        ]
+      ]
+    },
+    {
+      "artifact_id": "normalize_scores_18",
+      "descendants": [
+        "artifact:normalize_scores_00",
+        "artifact:normalize_scores_01",
+        "artifact:normalize_scores_02",
+        "failure:api_error",
+        "failure:hidden_semantic",
+        "test:normalize_scores_00:hidden"
+      ],
+      "lineage": [
+        "normalize_scores_18"
+      ],
+      "similar_failures": [
+        [
+          "normalize_scores_00",
+          1.0
+        ],
+        [
+          "normalize_scores_01",
+          1.0
+        ],
+        [
+          "normalize_scores_05",
+          1.0
+        ]
+      ]
+    }
+  ]
+}
