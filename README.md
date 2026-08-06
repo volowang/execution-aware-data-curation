@@ -1,6 +1,6 @@
 # Execution-Aware Data Curation for Code-Agent Artifacts
 
-This repository is a compact data-management prototype for curating code-agent artifacts. It is designed to match Professor Dong Deng's research on scalable data curation, data cleaning, data wrangling, provenance, and data lake management.
+This repository is a compact data-management prototype for curating code-agent artifacts. The work is about scalable data curation, data cleaning, data wrangling, provenance, and data lake management.
 
 ## Research Question
 
